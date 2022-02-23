@@ -1,3 +1,6 @@
+import tabJoursEnOrdre from './gestionTemps.js';
+// console.log("DEPUIS MAIN JS:" + tabJoursEnOrdre);
+
 const CLEFAPI = 'c70dd56694b3aa30cba4e7360ed7cb50';
 let resultatsAPI;
 
@@ -59,5 +62,6 @@ function AppelAPI(long, lat) {
             tempPourH[j].innerText = `${Math.trunc(resultatsAPI.hourly[j * 3].temp)}°`
         }
 
-    } )
+    })
 }
+
