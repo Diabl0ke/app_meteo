@@ -82,3 +82,20 @@ h1 {
     display: grid;
     grid-template : 100px / repeat(7, 1fr);
 }
+
+.bloc-h, .bloc-j {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #f1f1f1;
+    font-size: 21px;
+}
+
+.bloc-h:not(:last-child), .bloc-j:not(:last-child) {
+    border-right: 1px solid #f1f1f1;
+}
+
+.bloc-h p, .bloc-j p {
+    margin: 5px;
+}
