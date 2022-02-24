@@ -82,9 +82,9 @@ function AppelAPI(long, lat) {
 
         // Icone dynamique
         if(heureActuelle >= 6 && heureActuelle < 21) {
-            imgIcone.src = `C:\Users\Diabloke\Documents\GitHub\app_meteo\ressources\jour${resultatsAPI.current.weather[0].icon}.svg`
+            imgIcone.src = `ressources/jour/${resultatsAPI.current.weather[0].icon}.svg`
         } else  {
-        imgIcone.src = `C:\Users\Diabloke\Documents\GitHub\app_meteo\ressources\jour${resultatsAPI.current.weather[0].icon}.svg`
+        imgIcone.src = `ressources/nuit/${resultatsAPI.current.weather[0].icon}.svg`
         }
 
 
